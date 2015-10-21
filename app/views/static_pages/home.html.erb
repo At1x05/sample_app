@@ -1,12 +1,16 @@
 <% provide(:title, 'Home') %>
+<div class="center jumbotron">
+  <h1>Welcome to the Sample App</h1>
 
-    <h1> Matidea- what's this? </h1>
-    <p> 
-      This is sample application created by <a href='http://matidea.pl'> Matidea.pl</a> <br>
-      Visit site and check our other applications!
-    </p>
+  <h2>
+    This is the home page for the
+    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2>
 
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
 
-
-
-
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
+           
