@@ -1,0 +1,16 @@
+<% provide(:title, 'List of Users') %>
+
+<div class="row">
+  <div class="col-md-5">
+    
+                  
+    <% @user.each do |user| %>
+      <ul class='list-unstyled'>
+        
+        <li><strong><%= user.name %></strong> </li>
+        <li><%= mail_to user.email, "Send an E-mail" %> </li>
+        
+      </ul>
+    <% end %>
+  </div>
+</div>
